@@ -37,3 +37,11 @@ li {
 ol li em {
     font-weight: bold;
 }
+
+.pro li:nth-child(-n+3){
+    color: blue;
+}
+
+ul li.java {
+    background-color: pink;
+}
