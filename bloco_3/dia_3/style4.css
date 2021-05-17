@@ -18,6 +18,10 @@ ol li {
     background-color: yellow;
 }
 
-ol li:nth-child(odd) {
+ol li:nth-child(even) {
     color: green;
+}
+
+ol li.primo {
+    text-transform: uppercase;
 }
