@@ -1,0 +1,46 @@
+/*Exercícios parte 1*/
+
+h1 {
+    font-size: 65px;
+    color: orange
+}
+
+ul {
+  background-color: aquamarine;
+}
+
+.plist {
+  background-color: bisque;
+}
+
+
+/*Exercícios parte 2*/
+
+#head {
+  font-family: sans-serif;
+  line-height: 30px;
+}
+
+.paragrafo {
+  font-weight: 600;
+  font-size: 48px;
+  text-decoration: line-through;
+}
+
+body {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+
+#amarelo {
+  background-color: yellow;
+}
+
+#vermelho {
+  background-color: red;
+}
+
+#marrom {
+  background-color: brown;
+}
