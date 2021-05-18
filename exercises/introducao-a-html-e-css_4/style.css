@@ -23,6 +23,8 @@ h3 {
     background-color: aqua;
     font-size: 60;
     font-weight: bolder;
+    padding: 30px;
+    border: 2px solid rgb(188, 255, 233);
 }
 
 a {
@@ -51,6 +53,9 @@ article {
     border-width: 0px;
     border-style: solid;
     border-radius: 2%;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
 }
 
 section {
@@ -58,7 +63,7 @@ section {
 }
 
 img {
-    width: 400px;
+    width: 320px;
     border: 5%;
     border-radius: 40px;
 }
@@ -68,12 +73,17 @@ td {
     text-align: center;
 }
 
-table {
-    margin-right: 600px;
-    text-align: center;
-    float: right;
+.tabela {
+    
 }
 
-.imagem {
-    float: right;
+.texto, .imagem, .tabela {
+    display: inline-block;
+    width: 40%;
+}
+
+.texto {
+    text-align: left;
+    height: 80%;
+    border: 1px black solid;
 }
