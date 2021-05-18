@@ -13,22 +13,24 @@ header {
     border: none;
     border-radius: 30%;
     margin-left: 170px;
+    font-size: 23px;
 }
 
 h2 {
     padding-top: 1em;
     font-family: sans-serif;
+    font-size: 30px;
 }
 
 h3 {
     background-color: aqua;
-    font-size: 60;
+    font-size: 25px;
     font-weight: bolder;
     padding: 30px;
     color: rgb(12, 9, 9);
 }
 
-a {
+.link {
     border: round;
     background-color: rgb(188, 255, 233);
     color: rgb(0, 0, 170);
@@ -42,7 +44,7 @@ a {
     border-radius: 15%;
 }
 
-a:hover {
+.link:hover {
     background-color: aqua;
     border: none;
     transition-duration: 1s;
@@ -102,13 +104,10 @@ aside {
 
 aside:hover{
     background-color: aqua;
-    transition-duration: 1s;
-    float: right;
-    margin-right: 0%;
-    position: fixed;
-    width: 140px;
     border: none;
     border-radius: 10%;
+    width: 140px;
+    transition-duration: 1s;
 }
 
 p {
@@ -130,8 +129,11 @@ footer {
 }
 
 table {
-    border: 1px solid black;
     width: 90%;
     font-size: 25px;
     padding-left: 0%;
+}
+
+ul {
+    display: block;
 }
