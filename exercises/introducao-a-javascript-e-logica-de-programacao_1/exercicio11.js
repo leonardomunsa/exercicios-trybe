@@ -129,7 +129,6 @@ else if (salarioBruto > 2594.92 && salarioBruto <= 5189.82) {
 }
 else if (salarioBruto > 5189.82) {
     impostoInss = 570.88;
-    impostoInss = salarioBruto * (aliquotaInss);
     salarioLiquido = salarioBruto - impostoInss;
         if (salarioLiquido <= 1903.98) {
             aliquotaIr = 0;
