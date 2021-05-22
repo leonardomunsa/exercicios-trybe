@@ -8,3 +8,7 @@
 let n = [1, 2, 3, 4];
 
 //  printar os asteriscos na tela
+let i;
+for (i of n) {
+    console.log("*");
+}
