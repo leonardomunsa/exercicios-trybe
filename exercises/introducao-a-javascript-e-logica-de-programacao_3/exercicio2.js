@@ -1,5 +1,4 @@
-// 1- Para o primeiro exercício de hoje, faça um programa que, dado um valor n qualquer, seja n > 1, 
-// imprima na tela um quadrado feito de asteriscos de lado de tamanho n . Por exemplo:
+// 2- Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base.
 
 // declarar um n
 let n;
@@ -9,7 +8,7 @@ let n;
 let array = [];
 let asterisco;
 
-for (i = 1; i < 5; i += 1) {
+for (let i = 1; i < 5; i += 1) {
     n = "*";
     array.push(n)
     console.log(array.join(''));
