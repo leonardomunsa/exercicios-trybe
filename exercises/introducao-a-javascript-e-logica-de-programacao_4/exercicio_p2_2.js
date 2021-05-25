@@ -1,12 +1,16 @@
 
 function majorIndex (array) {
-    let bigIndex;
+    let biggest;
     for (let index = 0; index < array.length; index += 1) {
-        if (array[index+1] > array[index]) {
-            bigIndex = index+1;
+        let bigIndex = array[index];
+        for (let index2 = 0; index2 < array.length; index2 += 1) {
+            let nextIndex = array[index2];
+            if (bigIndex < nextIndex) {
+                biggest = index2;
+            }
         }
     }
-    return bigIndex;
+    return biggest;
 }
 
 console.log(majorIndex([2, 3, 6, 7, 10, 1]));
