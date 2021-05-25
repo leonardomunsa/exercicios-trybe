@@ -1,14 +1,13 @@
 
 function biggestChar (array) {
-    let maxString;
-    for (index = 0; index < array.length; index += 1) {
-        maxString = array[index];
-        let count = [];
-        for (letter of maxString) {
-            count.push(letter);
+    let palavraMaior = array[0]; 
+    for (let letras in array) {
+
+        if (palavraMaior.length < array[letras].length) {
+            palavraMaior = array[letras];
         }
     }
-    return maxString;
+    return palavraMaior;   
 }
 
-console.log(biggestChar(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+console.log(biggestChar(['José', 'Lucasalmeida', 'Nádia', 'Fernanda', 'Caio', 'Joana']));
