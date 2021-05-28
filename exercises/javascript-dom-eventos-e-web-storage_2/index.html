@@ -63,11 +63,11 @@
       bodi.appendChild(bodyH1);
 
       let divBody = document.createElement('div');
-      divBody.class = 'main-content';
+      divBody.className = 'main-content';
       bodi.appendChild(divBody);
 
       let divDiv = document.createElement('div');
-      divDiv.class = 'center-content';
+      divDiv.className = 'center-content';
       divBody.appendChild(divDiv);
 
       let divP = document.createElement('p');
@@ -75,16 +75,16 @@
       divDiv.appendChild(divP);
 
       let divLeft = document.createElement('div');
-      divLeft.class = 'left-content';
+      divLeft.className = 'left-content';
       divBody.appendChild(divLeft);
       
       let divRight = document.createElement('div');
-      divRight.class = 'right-content';
+      divRight.className = 'right-content';
       divBody.appendChild(divRight);
 
       let imgDivLeft = document.createElement('img');
       imgDivLeft.src = 'https://picsum.photos/200';
-      imgDivLeft.class = 'small-image';
+      imgDivLeft.className = 'small-image';
       divLeft.appendChild(imgDivLeft);
 
       let ulDivRight = document.createElement('ul');
@@ -102,18 +102,18 @@
 
       for (let i = 1; i < 4; i += 1) {
         let h3 = document.createElement('h3');
+        h3.className = 'description';
+        h3.innerText = 'teste';
         divBody.appendChild(h3);
       }
 
       bodyH1.className = 'title';
 
-      document.getElementsByTagName('h3').className = 'description';
-
       divBody.removeChild(divLeft);
 
       divRight.style.marginRight = 'auto';
 
-      divDiv.style.backgroundColor = 'green';
+      divBody.style.backgroundColor = 'green';
 
       let numbersList = document.querySelectorAll('.lista');
       for (let i = numbersList.length - 1; i >= 8; i -= 1) {
