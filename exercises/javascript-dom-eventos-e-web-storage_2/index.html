@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let bodyH1 = document.createElement('h1');
+      bodyH1.innerText = 'Exercício 5.2 - JavaScript e DOM';
+      let bodi = document.querySelector('body');
+      bodi.appendChild(bodyH1);
+
+      let divBody = document.createElement('div');
+      divBody.class = 'main-content';
+      bodi.appendChild(divBody);
+
+      let divDiv = document.createElement('div');
+      divDiv.class = 'center-content';
+      divBody.appendChild(divDiv);
+
+      let divP = document.createElement('p');
+      divP.innerText = 'É importante questionar o quanto o fenômeno da Internet ainda não demonstrou convincentemente que vai participar na mudança das novas proposições.';
+      divDiv.appendChild(divP);
+
+      let divLeft = document.createElement('div');
+      divLeft.class = 'left-content';
+      divBody.appendChild(divLeft);
+      
+      let divRight = document.createElement('div');
+      divRight.class = 'right-content';
+      divBody.appendChild(divRight);
+
+      let imgDivLeft = document.createElement('img');
+      imgDivLeft.src = 'https://picsum.photos/200';
+      imgDivLeft.class = 'small-image';
+      divLeft.appendChild(imgDivLeft);
+
+      let ulDivRight = document.createElement('ul');
+      divRight.appendChild(ulDivRight);
+      function addList(array) {
+        for (let i = 0; i < array.length; i += 1) {
+            let num = array[i];
+            let list = document.createElement('li');
+            list.innerText = num;
+            list.className = 'lista';
+            ulDivRight.appendChild(list);
+        }
+      }
+      addList(['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']);
+
+      for (let i = 1; i < 4; i += 1) {
+        let h3 = document.createElement('h3');
+        divBody.appendChild(h3);
+      }
+
+      bodyH1.className = 'title';
+
+      document.getElementsByTagName('h3').className = 'description';
+
+      divBody.removeChild(divLeft);
+
+      divRight.style.marginRight = 'auto';
+
+      divDiv.style.backgroundColor = 'green';
+
+      let numbersList = document.querySelectorAll('.lista');
+      for (let i = numbersList.length - 1; i >= 8; i -= 1) {
+        ulDivRight.removeChild(numbersList[i]);
+      }
+    </script>
+  </body>
+</html>
