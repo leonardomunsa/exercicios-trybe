@@ -148,3 +148,28 @@ function taskSelected() {
 }
 
 taskSelected();
+
+function colorAttribution() {
+    let father = document.querySelector('.my-tasks');
+    let element = father.lastChild;
+    let day = document.querySelectorAll('.day');
+    let newColor = element.style.backgroundColor;
+    let oldColor = 'rgb(119,119,119)';
+
+
+    for (let i = 0; i < day.length; i += 1) {
+        day[i].addEventListener('click', function() {
+            if (element.classList.contains('task-selected')) {
+                if (day[i].style.color === newColor) {
+                    day[i].style.color = oldColor;
+                } else {
+                    day[i].style.color = newColor;
+                }
+            }
+        })
+    }
+
+
+}
+
+colorAttribution()
