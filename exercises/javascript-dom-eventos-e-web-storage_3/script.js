@@ -135,3 +135,16 @@ function addColor(string) {
 }
 
 addColor('aquamarine');
+
+function taskSelected() {
+    let element = document.querySelector('.task');
+    element.addEventListener('click', function() {
+        if (element.classList.contains('task-selected')) {
+            element.classList.remove('task-selected');
+        } else {
+            element.classList.add('task-selected');
+        }
+    });   
+}
+
+taskSelected();
