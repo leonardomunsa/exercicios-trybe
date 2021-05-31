@@ -125,3 +125,13 @@ function addTask(string) {
 }
 
 addTask('Fazer a ceia');
+
+function addColor(string) {
+    let div = document.createElement('div');
+    div.style.backgroundColor = string;
+    div.className = 'task';
+    let father = document.querySelector('.my-tasks');
+    father.appendChild(div);
+}
+
+addColor('aquamarine');
