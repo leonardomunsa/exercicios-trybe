@@ -95,3 +95,24 @@ function changeFridayText() {
 }
 
 changeFridayText();
+
+function zoom() {
+    let days = document.querySelectorAll('li');
+
+    function zoomIn(element) {
+        element.target.style.fontSize = '150%';
+    }
+
+    function zoomOut(element) {
+        element.target.style.fontSize = 'initial';
+    }
+
+    for (let i = 0; i < days.length; i += 1) {
+        days[i].addEventListener('mouseover', zoomIn);
+    }
+    for (let i = 0; i < days.length; i += 1) {
+        days[i].addEventListener('mouseout', zoomOut);
+    }    
+}
+
+zoom();
