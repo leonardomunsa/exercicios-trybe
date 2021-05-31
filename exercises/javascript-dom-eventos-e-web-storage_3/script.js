@@ -65,3 +65,13 @@ function changeHolidayColor() {
 }
 
 changeHolidayColor();
+
+function fridayutton(string) {
+    let button = document.createElement('button');
+    button.innerText = string;
+    button.id = 'btn-friday';
+    let dad = document.querySelector('.buttons-container');
+    dad.appendChild(button);
+}
+
+holidayButton('Sexta-feira');
