@@ -46,3 +46,22 @@ function holidayButton(string) {
 }
 
 holidayButton('Feriados');
+
+function changeHolidayColor() {
+    let button2 = document.querySelector('#btn-holiday');
+    let holidays2 = document.querySelectorAll('.holiday');
+    let backgroundColor = 'rgb(238,238,238)';
+    let newColor = 'aqua';
+
+    button2.addEventListener('click', function() {
+        for (let i = 0; i < holidays2.length; i += 1) {
+            if (holidays2[i].style.backgroundColor === newColor) {
+                holidays2[i].style.backgroundColor = backgroundColor;
+            } else {
+                holidays2[i].style.backgroundColor = newColor;
+            }
+        }
+    })
+}
+
+changeHolidayColor();
