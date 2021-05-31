@@ -97,7 +97,7 @@ function changeFridayText() {
 changeFridayText();
 
 function zoom() {
-    let days = document.querySelectorAll('li');
+    let days = document.querySelectorAll('.day');
 
     function zoomIn(element) {
         element.target.style.fontSize = '150%';
@@ -116,3 +116,12 @@ function zoom() {
 }
 
 zoom();
+
+function addTask(string) {
+    let span = document.createElement('span');
+    span.innerText = string;
+    let father = document.querySelector('.my-tasks');
+    father.appendChild(span);
+}
+
+addTask('Fazer a ceia');
