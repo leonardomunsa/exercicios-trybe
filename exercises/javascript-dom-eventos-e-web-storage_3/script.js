@@ -156,7 +156,6 @@ function colorAttribution() {
     let newColor = element.style.backgroundColor;
     let oldColor = 'rgb(119,119,119)';
 
-
     for (let i = 0; i < day.length; i += 1) {
         day[i].addEventListener('click', function() {
             if (element.classList.contains('task-selected')) {
@@ -168,8 +167,34 @@ function colorAttribution() {
             }
         })
     }
-
-
 }
 
 colorAttribution()
+
+function compromises() {
+    let compromissos = document.querySelector('.task-list');
+    let botao = document.querySelector('#btn-add');
+    let campo = document.querySelector('#task-input');
+
+    botao.addEventListener('click', function() {
+        if (campo.value.length > 0) {
+            let task = document.createElement('li');
+            task.innerText = campo.value;
+            compromissos.appendChild(task);
+            campo.value = '';
+        } else {
+            alert('Escreva algo');
+        }
+    });
+
+    campo.addEventListener('keyup', function(event) {
+        if (event.keyCode === 13 && campo.value.length > 0) {
+            let task = document.createElement('li');
+            task.innerText = campo.value;
+            compromissos.appendChild(task);
+            campo.value = '';
+        }
+    });
+}
+
+compromises();
