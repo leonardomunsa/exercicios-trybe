@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF -8" />
+        <title>Formulário Trybe</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="" method="GET" enctype="multipart/form-data">
+            <fieldset>
+                <label for="nome-field">Nome</label>
+                <input type="text" maxlength="40" required id="nome-field">
+                <br><br>
+                <label for="email-field">Email</label>
+                <input type="text" maxlength="50" required id="email-field">
+                <br><br>
+                <label for="cpf-field">CPF</label>
+                <input type="text" maxlength="11" required id="cpf-field">
+                <br><br>
+                <label for="endereco-field">Endereço</label>
+                <input type="text" maxlength="200" required id="endereco-field">
+                <br><br>
+                <label for="cidade-field">Cidade</label>
+                <input type="text" maxlength="28" required id="cidade-field">
+                <br><br>
+                <label for="estado-field">Estado</label>
+                <select name="estado" required id="estado-field"></select>
+                <br><br>
+                <label for="casa-field">Casa</label>
+                <input type="radio" required id="casa-field" value="casa" name="local">
+                <label for="ap-field">Apartamento</label>
+                <input type="radio" required id="ap-field" value="ap" name="local">
+            </fieldset>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
