@@ -8,28 +8,57 @@
     <body>
         <form action="" method="GET" enctype="multipart/form-data">
             <fieldset>
-                <label for="nome-field">Nome</label>
-                <input type="text" maxlength="40" required id="nome-field">
+                <label for="nome">Nome</label>
+                <input type="text" maxlength="40" required id="nome">
                 <br><br>
-                <label for="email-field">Email</label>
-                <input type="text" maxlength="50" required id="email-field">
+                <label for="email">Email</label>
+                <input type="text" maxlength="50" required id="email">
                 <br><br>
-                <label for="cpf-field">CPF</label>
-                <input type="text" maxlength="11" required id="cpf-field">
+                <label for="cpf">CPF</label>
+                <input type="text" maxlength="11" required id="cpf">
                 <br><br>
-                <label for="endereco-field">Endereço</label>
-                <input type="text" maxlength="200" required id="endereco-field">
+                <label for="endereco">Endereço</label>
+                <input type="text" maxlength="200" required id="endereco">
                 <br><br>
-                <label for="cidade-field">Cidade</label>
-                <input type="text" maxlength="28" required id="cidade-field">
+                <label for="cidade">Cidade</label>
+                <input type="text" maxlength="28" required id="cidade">
                 <br><br>
-                <label for="estado-field">Estado</label>
-                <select name="estado" required id="estado-field"></select>
+                <label for="estado">Estado</label>
+                <select name="estado" required id="estado">
+                    <!-- Código retirado do link https://gist.github.com/quagliato/9282728 -->
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
                 <br><br>
-                <label for="casa-field">Casa</label>
-                <input type="radio" required id="casa-field" value="casa" name="local">
-                <label for="ap-field">Apartamento</label>
-                <input type="radio" required id="ap-field" value="ap" name="local">
+                <label for="casa">Casa</label>
+                <input type="radio" required id="casa" value="casa" name="local">
+                <label for="ap">Apartamento</label>
+                <input type="radio" required id="ap" value="ap" name="local">
             </fieldset>
             <fieldset>
                 <label for="curriculo">Resumo do currículo</label>
