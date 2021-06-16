@@ -52,3 +52,21 @@ figure {
         max-width: 100%;
     }
 }
+
+@media screen and (min-width: 1250px) {
+    body {
+        background-color: rgb(133, 73, 73);
+        font-size: 1.8em;
+        margin: 10px;
+        max-width: max-content;
+    }
+
+    figure {
+        width: 20%;
+        float: left;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
