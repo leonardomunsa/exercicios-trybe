@@ -30,3 +30,10 @@ function listKeys(objeto) {
 }
 
 listKeys(lesson1);
+
+const objectSize = (objeto) => {
+	const size = Object.keys(objeto);
+	console.log(size.length);
+}
+
+objectSize(lesson2);
