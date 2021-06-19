@@ -23,3 +23,10 @@ const earlyLesson = (objeto, chave, valor) => {
 }
 
 earlyLesson(lesson2, 'turno', 'manhã');
+
+function listKeys(objeto) {
+	const listagem = Object.keys(objeto);
+	console.log(listagem);
+}
+
+listKeys(lesson1);
