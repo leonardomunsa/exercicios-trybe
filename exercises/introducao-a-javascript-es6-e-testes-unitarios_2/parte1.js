@@ -15,19 +15,19 @@ const order = {
       pepperoni: {
         amount: 1,
         price: 20,
-      }
+      },
     },
     drinks: {
       coke: {
         type: 'Coca-Cola Zero',
         price: 10,
         amount: 1,
-      }
+      },
     },
     delivery: {
       deliveryPerson: 'Ana Silveira',
       price: 5,
-    }
+    },
   },
   payment: {
     total: 60,
@@ -35,15 +35,23 @@ const order = {
 };
 
 const customerInfo = (order) => {
-  // Adicione abaixo as informações necessárias.
-
-}
+  console.log(
+    `Olá ${order.order.delivery.deliveryPerson}, entrega para: ${order.name}, Telefone: ${order.phoneNumber}, R. ${order.address.street}, Nº: ${order.address.street}, AP ${order.address.apartment}`
+  );
+  
+  
+};
 
 customerInfo(order);
 
 const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
+  order.order.delivery.deliveryPerson = 'Luiz Silva';
+  order.payment = 50;
 
-}
+  console.log(
+    `Olá ${order.order.delivery.deliveryPerson}, o total do seu pedido de muzzarella, calabresa e Coca-Cola Zero é R$ ${order.payment}`
+  );
+
+};
 
 orderModifier(order);
