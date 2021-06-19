@@ -29,11 +29,24 @@ function listKeys(objeto) {
 	console.log(listagem);
 }
 
-listKeys(lesson1);
+// listKeys(lesson1);
 
 const objectSize = (objeto) => {
 	const size = Object.keys(objeto);
 	console.log(size.length);
 }
 
-objectSize(lesson2);
+// objectSize(lesson2);
+
+function listValues(objeto) {
+	const valores = Object.values(objeto);
+	console.log(valores);
+}
+
+// listValues(lesson3);
+
+
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+allLessons.lesson2.turno = 'noite';
+
+console.log(allLessons);
