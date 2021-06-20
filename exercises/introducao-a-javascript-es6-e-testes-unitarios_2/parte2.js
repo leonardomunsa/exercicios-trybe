@@ -68,4 +68,14 @@ function getValueByNumber(objeto, posicao) {
 	}
 }
 
-console.log(getValueByNumber(lesson1, 2));
+// console.log(getValueByNumber(lesson1, 2));
+
+function verifyPair(objeto, chave, valor) {
+	const itens = Object.entries(objeto);
+	for (let index = 0; index < itens.length; index += 1) {
+		if (itens[index][0] === chave && itens[index][1] === valor) { return true };
+	}
+	return false;
+}
+
+console.log(verifyPair(lesson3, 'materia', 'James'));
