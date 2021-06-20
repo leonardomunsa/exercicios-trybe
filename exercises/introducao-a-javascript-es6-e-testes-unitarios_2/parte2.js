@@ -90,4 +90,22 @@ function studentPresence(chave) {
 	return numeroDeAlunos;
 }
 
-console.log(studentPresence('Matemática'));
+// console.log(studentPresence('Matemática'));
+
+function createReport(objeto, valor) {
+	const relatorio = {};
+	let classes = [];
+	let numeroDeAlunos = 0;
+	for (let index in objeto) {
+		if (objeto[index].professor === valor) {
+			relatorio.professor = valor;
+			classes.push(objeto[index].materia);
+			relatorio.aulas = classes;
+			numeroDeAlunos += objeto[index].numeroEstudantes;
+			relatorio.estudantes = numeroDeAlunos;
+		}
+	}
+	return relatorio;
+}
+
+console.log(createReport(allLessons, 'Maria Clara'));
