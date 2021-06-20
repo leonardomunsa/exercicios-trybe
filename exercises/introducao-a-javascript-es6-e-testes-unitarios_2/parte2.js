@@ -55,4 +55,17 @@ function allStudents() {
 	console.log(`Número total de alunos: ${(lesson1.numeroEstudantes + lesson2.numeroEstudantes + lesson3.numeroEstudantes)}`);
 }
 
-allStudents();
+// allStudents();
+
+function getValueByNumber(objeto, posicao) {
+	let number = 0;
+	for (let index in objeto) {
+		if (number === posicao) {
+			return objeto[index];
+		} else {
+			number += 1;
+		}
+	}
+}
+
+console.log(getValueByNumber(lesson1, 2));
