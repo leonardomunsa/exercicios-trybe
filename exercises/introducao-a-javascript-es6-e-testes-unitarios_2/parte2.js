@@ -78,4 +78,16 @@ function verifyPair(objeto, chave, valor) {
 	return false;
 }
 
-console.log(verifyPair(lesson3, 'materia', 'James'));
+// console.log(verifyPair(lesson3, 'materia', 'James'));
+
+function studentPresence(chave) {
+	let numeroDeAlunos = 0;
+	for (let index in allLessons) {
+		if (allLessons[index].materia === chave) {
+			numeroDeAlunos += allLessons[index].numeroEstudantes;
+		}
+	}
+	return numeroDeAlunos;
+}
+
+console.log(studentPresence('Matemática'));
