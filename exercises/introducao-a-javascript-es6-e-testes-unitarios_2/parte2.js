@@ -49,4 +49,10 @@ function listValues(objeto) {
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 allLessons.lesson2.turno = 'noite';
 
-console.log(allLessons);
+// console.log(allLessons);
+
+function allStudents() {
+	console.log(`Número total de alunos: ${(lesson1.numeroEstudantes + lesson2.numeroEstudantes + lesson3.numeroEstudantes)}`);
+}
+
+allStudents();
