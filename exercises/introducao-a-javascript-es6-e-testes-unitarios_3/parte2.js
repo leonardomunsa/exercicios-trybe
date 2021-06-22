@@ -1,6 +1,6 @@
 const assert = require('assert');
 // escreva a função addOne aqui
-/*
+
 function addOne(array) {
     let newArray = [];
     for (let index = 0; index < array.length; index += 1) {
@@ -20,7 +20,7 @@ assert.deepStrictEqual(myArray, unchanged);
 */
 
 // escreva a função wordLengths aqui
-/*
+
 const wordLengths = (array) => {
     let newArray = [];
     for (let index = 0; index < array.length; index += 1) {
@@ -38,7 +38,7 @@ assert.deepStrictEqual(output, expected);
 */
 
 // escreva a função sumAllNumbers aqui
-/*
+
 function sumAllNumbers(array) {
     let sum = 0;
     for (let index = 0; index < array.length; index += 1) {
@@ -53,7 +53,7 @@ const output = sumAllNumbers(numbers);
 
 assert.strictEqual(typeof sumAllNumbers, 'function');
 assert.strictEqual(output, expected);
-*/
+
 
 // escreva a função findTheNeedle aqui
 

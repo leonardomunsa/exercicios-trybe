@@ -9,9 +9,9 @@ function sum(a, b) {
 }
 
 // implemente seus testes aqui
-// assert.strictEqual(sum(4,5), 9);
-// assert.strictEqual(sum(0,0), 0);
-// assert.strictEqual(sum(4,'5'), 9);
+assert.strictEqual(sum(4,5), 9);
+assert.strictEqual(sum(0,0), 0);
+assert.strictEqual(sum(4,'5'), 9);
 
 function myRemove(arr, item) {
   let newArr = [];
@@ -24,14 +24,14 @@ function myRemove(arr, item) {
 }
 
 // implemente seus testes aqui
-// assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 4]);
-// assert.notDeepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 3, 4]);
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 4]);
+assert.notDeepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 3, 4]);
 
-// const myList = [5, 6, 7, 8];
-// myRemove(myList, 5);
-// assert.deepStrictEqual(myList, [5, 6, 7, 8]);
+const myList = [5, 6, 7, 8];
+myRemove(myList, 5);
+assert.deepStrictEqual(myList, [5, 6, 7, 8]);
 
-// assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]);
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]);
 
 function myRemoveWithoutCopy(arr, item) {
   for (let index = 0, len = arr.length; index < len; index += 1) {
@@ -46,14 +46,14 @@ function myRemoveWithoutCopy(arr, item) {
 }
 
 // implemente seus testes aqui
-// assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 4]);
-// assert.notDeepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 3, 4]);
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 4]);
+assert.notDeepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 3, 4]);
 
-// const myList = [1, 2, 3];
-// myRemoveWithoutCopy(myList, 3);
-// assert.notDeepStrictEqual(myList, [1, 2, 3]);
+const myList = [1, 2, 3];
+myRemoveWithoutCopy(myList, 3);
+assert.notDeepStrictEqual(myList, [1, 2, 3]);
 
-// assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);
 
 function myFizzBuzz(num) {
   if (typeof num !== 'number') return false;
@@ -65,17 +65,17 @@ function myFizzBuzz(num) {
 
 // implemente seus testes aqui
 
-//const teste1 = 15;
-// const teste2 = 12;
-//const teste3 = 25;
-// const teste4 = 22;
-// const teste5 = 'não é número';
+const teste1 = 15;
+const teste2 = 12;
+const teste3 = 25;
+const teste4 = 22;
+const teste5 = 'não é número';
 
-// assert.deepStrictEqual(myFizzBuzz(teste1), 'fizzbuzz');
-// assert.deepStrictEqual(myFizzBuzz(teste2), 'fizz');
-// assert.deepStrictEqual(myFizzBuzz(teste3), 'buzz');
-// assert.deepStrictEqual(myFizzBuzz(teste4), 22);
-// assert.deepStrictEqual(myFizzBuzz(teste5), false);
+assert.deepStrictEqual(myFizzBuzz(teste1), 'fizzbuzz');
+assert.deepStrictEqual(myFizzBuzz(teste2), 'fizz');
+assert.deepStrictEqual(myFizzBuzz(teste3), 'buzz');
+assert.deepStrictEqual(myFizzBuzz(teste4), 22);
+assert.deepStrictEqual(myFizzBuzz(teste5), false);
 
 const obj1 = {
   title: 'My Title',

@@ -1,6 +1,5 @@
 const assert = require('assert');
 
-/*
 const greetPeople = (people) => {
   let greetingList = [];
   for (let person in people) {
@@ -15,8 +14,7 @@ const parameter = ['Irina', 'Ashleigh', 'Elsa'];
 const result = ['Hello Irina', 'Hello Ashleigh', 'Hello Elsa'];
 
 assert.deepStrictEqual(greetPeople(parameter), result);
-*/
-/*
+
 const removeVowels = (word) => {
   const characters = word.split('');
   const results = [];
@@ -43,8 +41,7 @@ const parameter = 'Dayane';
 const result = 'D1y2n3';
 
 assert.strictEqual(removeVowels(parameter), result);
-*/
-/*
+
 const greaterThanTen = (array) => {
   let results = [];
   for (let index = 0; index < array.length; index += 1) {
@@ -59,7 +56,7 @@ const parameter = [4, 10, 32, 9, 21];
 const result = [32, 21];
 
 assert.deepStrictEqual(greaterThanTen(parameter), result);
-*/
+
 
 function secondThirdSmallest(array) {
 	let results = []
