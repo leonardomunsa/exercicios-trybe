@@ -20,7 +20,7 @@ assert.deepStrictEqual(myArray, unchanged);
 */
 
 // escreva a função wordLengths aqui
-
+/*
 const wordLengths = (array) => {
     let newArray = [];
     for (let index = 0; index < array.length; index += 1) {
@@ -35,3 +35,21 @@ const expected = [3, 6, 10, 5];
 assert.strictEqual(typeof wordLengths, 'function');
 const output = wordLengths(words);
 assert.deepStrictEqual(output, expected);
+*/
+
+// escreva a função sumAllNumbers aqui
+
+function sumAllNumbers(array) {
+    let sum = 0;
+    for (let index = 0; index < array.length; index += 1) {
+        sum += array[index];
+    }
+    return sum;
+}
+
+const numbers = [9, 23, 10, 3, 8];
+const expected = 53;
+const output = sumAllNumbers(numbers);
+
+assert.strictEqual(typeof sumAllNumbers, 'function');
+assert.strictEqual(output, expected);
