@@ -44,7 +44,7 @@ const result = 'D1y2n3';
 
 assert.strictEqual(removeVowels(parameter), result);
 */
-
+/*
 const greaterThanTen = (array) => {
   let results = [];
   for (let index = 0; index < array.length; index += 1) {
@@ -59,3 +59,18 @@ const parameter = [4, 10, 32, 9, 21];
 const result = [32, 21];
 
 assert.deepStrictEqual(greaterThanTen(parameter), result);
+*/
+
+function secondThirdSmallest(array) {
+	let results = []
+	array.sort(function (x, y) {
+			return x - y;
+	});
+	results = [array[1], array[2]];
+	return results;
+};
+
+const parameter = [4, 10, 32, 9, 21, 90, 5, 11, 8, 6];
+const result = [5, 6];
+
+assert.deepStrictEqual(secondThirdSmallest(parameter), result);
