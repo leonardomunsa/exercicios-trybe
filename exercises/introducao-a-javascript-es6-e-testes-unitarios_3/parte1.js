@@ -46,15 +46,35 @@ function myRemoveWithoutCopy(arr, item) {
 }
 
 // implemente seus testes aqui
-assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 4]);
-assert.notDeepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 3, 4]);
+// assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 4]);
+// assert.notDeepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 3, 4]);
 
-const myList = [1, 2, 3];
-myRemoveWithoutCopy(myList, 3);
-assert.notDeepStrictEqual(myList, [1, 2, 3]);
+// const myList = [1, 2, 3];
+// myRemoveWithoutCopy(myList, 3);
+// assert.notDeepStrictEqual(myList, [1, 2, 3]);
 
-assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);
+// assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);
 
+function myFizzBuzz(num) {
+  if (typeof num !== 'number') return false;
+  if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
+  if (num % 3 === 0) return 'fizz';
+  if (num % 5 === 0) return 'buzz';
+  return num;
+}
 
+// implemente seus testes aqui
+
+const teste1 = 15;
+const teste2 = 12;
+const teste3 = 25;
+const teste4 = 22;
+const teste5 = 'não é número';
+
+assert.deepStrictEqual(myFizzBuzz(teste1), 'fizzbuzz');
+assert.deepStrictEqual(myFizzBuzz(teste2), 'fizz');
+assert.deepStrictEqual(myFizzBuzz(teste3), 'buzz');
+assert.deepStrictEqual(myFizzBuzz(teste4), 22);
+assert.deepStrictEqual(myFizzBuzz(teste5), false);
 
 
