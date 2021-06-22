@@ -65,16 +65,32 @@ function myFizzBuzz(num) {
 
 // implemente seus testes aqui
 
-const teste1 = 15;
-const teste2 = 12;
-const teste3 = 25;
-const teste4 = 22;
-const teste5 = 'não é número';
+//const teste1 = 15;
+// const teste2 = 12;
+//const teste3 = 25;
+// const teste4 = 22;
+// const teste5 = 'não é número';
 
-assert.deepStrictEqual(myFizzBuzz(teste1), 'fizzbuzz');
-assert.deepStrictEqual(myFizzBuzz(teste2), 'fizz');
-assert.deepStrictEqual(myFizzBuzz(teste3), 'buzz');
-assert.deepStrictEqual(myFizzBuzz(teste4), 22);
-assert.deepStrictEqual(myFizzBuzz(teste5), false);
+// assert.deepStrictEqual(myFizzBuzz(teste1), 'fizzbuzz');
+// assert.deepStrictEqual(myFizzBuzz(teste2), 'fizz');
+// assert.deepStrictEqual(myFizzBuzz(teste3), 'buzz');
+// assert.deepStrictEqual(myFizzBuzz(teste4), 22);
+// assert.deepStrictEqual(myFizzBuzz(teste5), false);
 
+const obj1 = {
+  title: 'My Title',
+  description: 'My Description',
+};
 
+const obj2 = {
+  description: 'My Description',
+  title: 'My Title',
+};
+
+const obj3 = {
+  title: 'My Different Title',
+  description: 'My Description',
+};
+
+// implemente seus testes aqui
+assert.notStrictEqual(obj3, obj1);
