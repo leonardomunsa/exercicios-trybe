@@ -64,3 +64,10 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+
+function authorBornIn1947() {
+    const objeto = books.find((elemento) => elemento.author.birthYear === 1947);
+    return objeto.author.name;
+}
+
+assert.strictEqual(authorBornIn1947(), 'Stephen King');
