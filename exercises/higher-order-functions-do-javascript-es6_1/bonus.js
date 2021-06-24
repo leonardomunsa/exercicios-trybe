@@ -24,14 +24,16 @@ const battleMembers = { mage, warrior, dragon };
 function dragonDamage() {
   const min = Math.ceil(15);
   const max = Math.floor(dragon.strength);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  const jimii = Math.floor(Math.random() * (max - min + 1)) + min;
+	return jimii;
 }
 
 // parte 1 -2
 function warriorDamage() {
   const min = Math.ceil(warrior.strength);
   const max = Math.floor(warrior.strength * warrior.weaponDmg);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  const james = Math.floor(Math.random() * (max - min + 1)) + min;
+	return james;
 }
 
 // parte 1 - 3
