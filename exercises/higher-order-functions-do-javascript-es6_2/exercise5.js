@@ -64,3 +64,11 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+
+const expectedResult = false;
+
+function everyoneWasBornOnSecXX() {
+  return books.every((element) => (element.author.birthYear > 1899 && element.author.birthYear < 1999));   
+}
+
+assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
