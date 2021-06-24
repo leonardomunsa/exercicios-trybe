@@ -64,3 +64,21 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+
+const expectedResult = false;
+
+function authorUnique() {
+  let bool = true;
+  let year = books[0].author.birthYear;
+  books.forEach((element) => {
+    year = element.author.birthYear;
+    books.forEach((elemens) => {
+        if (elemens.author.birthYear === year) {
+            bool = false;
+        };
+    });
+  });
+  return bool;
+}
+
+assert.strictEqual(authorUnique(), expectedResult);
