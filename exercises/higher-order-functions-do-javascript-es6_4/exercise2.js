@@ -68,7 +68,7 @@ module.exports = books;
 const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
 
 function reduceNames() {
-  return books.reduce(((acc, curr) => acc += `${curr.author.name}, `), '').replace(/. $/,".");
+  return books.reduce(((acc, curr) => acc += `${curr.author.name}, `), '').replace(/, $/,".");
 }
 
 assert.strictEqual(reduceNames(), expectedResult);
