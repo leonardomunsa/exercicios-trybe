@@ -1,3 +1,3 @@
 const assert = require('assert');
 
-const books = require('./exercice2');
+const books = require('./exercise2');
