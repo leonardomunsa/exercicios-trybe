@@ -18,6 +18,7 @@ const ships = [
   },
 ];
 
+
 // escreva shipLength abaixo
 const shipLength = (arr) => `${arr.name} is ${arr.length} ${arr.measurementUnit} long`
 
