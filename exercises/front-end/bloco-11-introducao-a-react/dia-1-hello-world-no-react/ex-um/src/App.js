@@ -6,9 +6,11 @@ const Task = (value) => {
   );
 }
 
+const tarefas = ['Acordar', 'Tomar café', 'Escovar os dentes', 'Ir trabalhar'];
+
 function App() {
   return (
-    Task()
+    <ul>{ tarefas.map(tarefa => Task(tarefa)) }</ul>
   );
 }
 
