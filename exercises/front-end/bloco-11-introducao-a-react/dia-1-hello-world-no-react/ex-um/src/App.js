@@ -1,16 +1,12 @@
 import './App.css';
-
-const Task = (value) => {
-  return (
-    <li>{value}</li>
-  );
-}
-
-const tarefas = ['Acordar', 'Tomar café', 'Escovar os dentes', 'Ir trabalhar'];
+import Image from './Image';
 
 function App() {
   return (
-    <ul>{ tarefas.map(tarefa => Task(tarefa)) }</ul>
+    <Image
+      source="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg"
+      alternativeText="Cute cat staring"
+    />
   );
 }
 
