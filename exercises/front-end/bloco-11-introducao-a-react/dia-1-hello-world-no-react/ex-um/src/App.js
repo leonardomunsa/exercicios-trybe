@@ -8,6 +8,6 @@ function App() {
       alternativeText="Cute cat staring"
     />
   );
-}
+} 
 
 export default App;
